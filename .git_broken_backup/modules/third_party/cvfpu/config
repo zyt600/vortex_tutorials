@@ -1,0 +1,21 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	worktree = ../../../../third_party/cvfpu
+[remote "origin"]
+	url = https://github.com/openhwgroup/cvfpu.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "develop"]
+	remote = origin
+	merge = refs/heads/develop
+[submodule "src-sv/common_cells"]
+	active = true
+	url = https://github.com/pulp-platform/common_cells.git
+[submodule "src-sv/fpu_div_sqrt_mvp"]
+	active = true
+	url = https://github.com/pulp-platform/fpu_div_sqrt_mvp.git
+[submodule "tb/flexfloat"]
+	active = true
+	url = https://github.com/oprecomp/flexfloat.git
